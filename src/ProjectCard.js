@@ -7,34 +7,45 @@ const ProjectDiv = styled.div`
     width: 100%;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: WhiteSmoke;
+    text-align: center;
 `
 
-const ProjectTitle = styled.h3`
-    font-size: large;
-    float: right;
-    padding-right: 30rem;
+const ProjectTitle = styled.h1`
+    font-family: 'Poppins';
+
+`
+
+const TitleDiv = styled.div`
+    text-align: center;
+    padding-bottom: 1rem;
 `
 
 const ProjectImage = styled.img`
-    width: 25%;
-    padding-left: 2rem;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 const ProjectImageOpaq = styled.img`
-    width: 25%;
-    padding-left: 2rem;
+    width: 30%;
     opacity: 0.5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 
-let LinkText = styled.h2`
+const LinkText = styled.h2`
     vertical-align: top;
     display: inline-block;
-    text-align: center;
     position: relative;
-    top: 80px;
-    right: 150px;
+    top: 140px;
+    right: 250px;
     color: black;
-    font-family: 'Amatic SC';
+    font-family: 'Poppins';
+    text-shadow: 2px 2px 4px #000000;
+`
+
+const DescDiv = styled.div`
+    font-family: 'Poppins';
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: large;
 `
 
 export default class ProjectCard extends React.Component {
@@ -58,10 +69,16 @@ export default class ProjectCard extends React.Component {
 
         return( <div>
                 <ProjectDiv>
-                    {this.state.opaq ? <a href={this.props.projectInfo.demoLink}><ProjectImageOpaq src={this.props.projectInfo.background} alt="" onMouseEnter={this.showLink} onMouseLeave={this.hideLink}/><LinkText>Demo</LinkText></a> : <ProjectImage src={this.props.projectInfo.background} alt="" onMouseEnter={this.showLink} onMouseLeave={this.hideLink}/>}
-                    <ProjectTitle>
-                        {this.props.projectInfo.name}
-                    </ProjectTitle>
+                    <TitleDiv>
+                        <ProjectTitle>
+                            {this.props.projectInfo.name}
+                        </ProjectTitle>
+                    </TitleDiv>
+                    <DescDiv>
+                        {this.props.projectInfo.descr}
+                    </DescDiv>
+                    {this.state.opaq ? <a href={this.props.projectInfo.demoLink}><ProjectImageOpaq src={this.props.projectInfo.background} alt="" onMouseEnter={this.showLink} onMouseLeave={this.hideLink}/><LinkText>DEMO</LinkText></a> : <ProjectImage src={this.props.projectInfo.background} alt="" onMouseEnter={this.showLink} onMouseLeave={this.hideLink}/>}
+                    
                 </ProjectDiv>
             </div> )
     }
