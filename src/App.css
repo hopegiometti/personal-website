@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+body, html {
+  height: 100%;
+}
+/* .bg {
+  background-image: url("LogoMakr_2JGaQ5.png");
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+} */
+
+.about { 
+  clear: both;
+  margin-top: 20px;
+  background-color: #FFF;
+  width: 45%;
+  height: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+h1.title{
+  font-family: 'Amatic SC';
+  font-weight: 900;
+  font-size: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
