@@ -9,6 +9,7 @@ import SkillsCont from './SkillsCont'
 import NavBar from './NavBar'
 import AboutMe from './AboutMe'
 import HopePhoto from './IMG_0877.jpg'
+import ContactMeCont from './ContactMeCont'
 //styling
 import styled from 'styled-components'
 
@@ -54,6 +55,7 @@ export default class MainCont extends React.Component {
             <AboutMe/>
             <ProjectCont projects={projects}/>
             <SkillsCont />
+            <ContactMeCont />
         </div>)
     }
 }

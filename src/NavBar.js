@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import LinkedInLogo from './LI-In-Bug2.png'
+import GithubLogo from './GitHub-Mark-64px.png'
 //styling
 import styled from 'styled-components'
 
@@ -22,8 +23,9 @@ const NeedToSee = styled.body`
 `
 
 const StyledLinkRight = styled.div`
+    float: right;
     display: inline;
-    padding-left: 1rem;
+    padding-right: 1.2rem;
 `
 const StyledLogo = styled.img`
     float: right;
@@ -71,7 +73,21 @@ export default class NavBar extends React.Component {
                     </Link>
                 </StyledLink>
                 <StyledLinkRight>
+                    <Link 
+                        to="contact-cont" 
+                        spy={true} 
+                        smooth={true} 
+                        duration={500} 
+                        className='some-class' 
+                        activeClass='some-active-class'>
+                        Contact Me
+                    </Link>
+                </StyledLinkRight>
+                <StyledLinkRight>
                 <a href="https://www.linkedin.com/in/hopegiometti/"><StyledLogo src={LinkedInLogo}  alt="Logo"/></a>
+                </StyledLinkRight>
+                <StyledLinkRight>
+                <a href="https://github.com/hopegiometti"><StyledLogo src={GithubLogo}  alt="Logo"/></a>
                 </StyledLinkRight>
             </NavBarDiv>
             {/* </NeedToSee> */}
