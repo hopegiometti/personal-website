@@ -5,7 +5,7 @@ import RailsLogo from './download.png'
 import JSLogo from './JSLogo.png'
 import ReactPNGLogo from './ReactPNGLogo.png'
 import ReduxLogo from './ReduxLogo.png'
-import PostgresLogo from './PostgresLogo.png'
+import PostgresLogo from './PostgresLogo2.png'
 //styling
 import styled from 'styled-components'
 
@@ -17,6 +17,7 @@ const LogoDiv = styled.div`
 const StyledLogo = styled.img`
     width: 12%;
     padding-left: 5rem;
+    padding-bottom: 1rem;
 `
 const StyledLogoText = styled.h4`
     display: inline;
