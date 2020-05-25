@@ -13,6 +13,7 @@ const LogoDiv = styled.div`
     background-color: white;
     display: flex;
     text-align: center;
+    padding-bottom: 3rem;
 `
 const StyledLogo = styled.img`
     width: 12%;

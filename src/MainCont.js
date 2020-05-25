@@ -51,7 +51,8 @@ const AboutMeText = styled.h2`
     font-family: 'Poppins';
     background-color: black;
     opacity: 0.5;
-    border: 5px solid white;    
+    border: 5px solid white; 
+    padding: 0.5rem;   
 `
 
 

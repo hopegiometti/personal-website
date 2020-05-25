@@ -6,6 +6,7 @@ import styled from 'styled-components'
 const StyledContactInfo = styled.div`
     text-align: center;
     background-color: white;
+    padding-bottom: 5rem;
 `
 
 export default class SkillsCont extends React.Component {

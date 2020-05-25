@@ -12,9 +12,7 @@ const ContainerDiv = styled.div`
     z-index: 1;
     position: relative;
     background-color: white;
-`
-const AddingTopSpaceDiv = styled.div`
-    padding-top: 0rem;
+    padding-top: 0.5rem;
 `
 const SpaceDiv = styled.div`
     display: flex;
@@ -24,14 +22,14 @@ const SpaceDiv = styled.div`
 export default class ProjectCont extends React.Component {
     
     render() {
-        return(<AddingTopSpaceDiv>
+        return(<div>
             <ContainerDiv>
             <SpaceDiv><h1>My Projects</h1></SpaceDiv>
                 <Element id="project-cont" name='project-cont'>
                         {this.props.projects.map(project => <ProjectCard key={project.id} projectInfo={project}/>)}
                 </Element>
             </ContainerDiv>
-        </AddingTopSpaceDiv>)
+        </div>)
     }
 }
 
