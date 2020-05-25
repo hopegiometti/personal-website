@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import LinkedInLogo from './LI-In-Bug2.png'
 import GithubLogo from './GitHub-Mark-64px.png'
+import MediumLogo from './mediumLogo.png'
 //styling
 import styled from 'styled-components'
 
@@ -11,6 +12,7 @@ const NavBarDiv = styled.div`
     position: fixed;
     width: 100%;
     background-color: white;
+    padding-top: 0.5rem;
 `
 
 const StyledLink = styled.div`
@@ -84,10 +86,13 @@ export default class NavBar extends React.Component {
                     </Link>
                 </StyledLinkRight>
                 <StyledLinkRight>
-                <a href="https://www.linkedin.com/in/hopegiometti/"><StyledLogo src={LinkedInLogo}  alt="Logo"/></a>
+                    <a href="https://medium.com/@hopegiometti" target="_blank"><StyledLogo src={MediumLogo}  alt="Medium"/></a>
                 </StyledLinkRight>
                 <StyledLinkRight>
-                <a href="https://github.com/hopegiometti"><StyledLogo src={GithubLogo}  alt="Logo"/></a>
+                    <a href="https://www.linkedin.com/in/hopegiometti/" target="_blank"><StyledLogo src={LinkedInLogo}  alt="LinkedIn"/></a>
+                </StyledLinkRight>
+                <StyledLinkRight>
+                    <a href="https://github.com/hopegiometti" target="_blank"><StyledLogo src={GithubLogo}  alt="Github"/></a>
                 </StyledLinkRight>
             </NavBarDiv>
             {/* </NeedToSee> */}

@@ -13,7 +13,7 @@ const HopeImage = styled.img`
 `
 const AllBoutMe = styled.div`
     background-color: white;
-    opacity: 0.5;
+    opacity: 1;
 `
 
 const FixedTextColor = styled.h4`

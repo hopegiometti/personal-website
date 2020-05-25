@@ -21,6 +21,39 @@ const HopeImage = styled.img`
     z-index: -1;
 `
 
+const SpacingOpenText = styled.div`
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+`
+
+const OpeningText = styled.h1`
+    vertical-align: top;
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins';
+`
+const SpacingAboutMeText = styled.div`
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    padding-right: 15%;
+    padding-left: 15%;
+`
+
+const AboutMeText = styled.h2`
+    vertical-align: top;
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins';
+    background-color: black;
+    opacity: 0.5;
+    border: 5px solid white;    
+`
+
 
 export default class MainCont extends React.Component {
     render() {
@@ -50,9 +83,17 @@ export default class MainCont extends React.Component {
 
         return(<div>
             <AboutCont />
-            <HopeImage src={HopePhoto} alt=""/>
+            <HopeImage src={HopePhoto} alt="Photo of Me"/>
+                <Element id="about-me" name='about-me'>
+                <SpacingOpenText>
+                    <OpeningText>WHO AM I?</OpeningText>
+                </SpacingOpenText>
+                <SpacingAboutMeText>
+                    <AboutMeText>My Name is Hope Giometti. I am a programmer. In the past year, I have graduated with a degree in English from Kenyon College and from the Flatiron School. At Flatiron I learned not just how to code, but developed a passion that has now become my career. Currently, I am for hire as a fullstack engineer. </AboutMeText>
+                </SpacingAboutMeText>
+                </Element>
             <NavBar />
-            <AboutMe/>
+            {/* <AboutMe/> */}
             <ProjectCont projects={projects}/>
             <SkillsCont />
             <ContactMeCont />

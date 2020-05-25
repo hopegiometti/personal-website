@@ -77,7 +77,7 @@ export default class ProjectCard extends React.Component {
                     <DescDiv>
                         {this.props.projectInfo.descr}
                     </DescDiv>
-                    {this.state.opaq ? <a href={this.props.projectInfo.demoLink}><ProjectImageOpaq src={this.props.projectInfo.background} alt="" onMouseEnter={this.showLink} onMouseLeave={this.hideLink}/><LinkText>DEMO</LinkText></a> : <ProjectImage src={this.props.projectInfo.background} alt="" onMouseEnter={this.showLink} onMouseLeave={this.hideLink}/>}
+                    {this.state.opaq ? <a href={this.props.projectInfo.demoLink} target="_blank"><ProjectImageOpaq src={this.props.projectInfo.background} alt="" onMouseEnter={this.showLink} onMouseLeave={this.hideLink}/><LinkText>DEMO</LinkText></a> : <ProjectImage src={this.props.projectInfo.background} alt="" onMouseEnter={this.showLink} onMouseLeave={this.hideLink}/>}
                     
                 </ProjectDiv>
             </div> )
