@@ -56,7 +56,7 @@ export default class ProjectCard extends React.Component {
     showLink = () => {
         this.setState({
             opaq: true
-        }, () => console.log(this.props.projectInfo.demoLink))
+        })
     }
     
     hideLink = () => {
