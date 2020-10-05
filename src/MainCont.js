@@ -10,6 +10,7 @@ import NavBar from './NavBar'
 import AboutMe from './AboutMe'
 import HopePhoto from './IMG_0877.jpg'
 import ContactMeCont from './ContactMeCont'
+import SpellsThumbnail from './Spellsthumbnail.png'
 //styling
 import styled from 'styled-components'
 
@@ -84,7 +85,7 @@ export default class MainCont extends React.Component {
                 name: "Standard Website of Spells",
                 demoLink: "https://www.youtube.com/watch?v=iAf6YddllC4&feature=youtu.be",
                 descr: "Dictionary Website for spells from the Harry Potter series",
-                background: 'https://imgur.com/a/q7ZMgfP'
+                background: SpellsThumbnail
             }
         ]
 
