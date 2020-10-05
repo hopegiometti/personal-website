@@ -6,6 +6,8 @@ import JSLogo from './JSLogo.png'
 import ReactPNGLogo from './ReactPNGLogo.png'
 import ReduxLogo from './ReduxLogo.png'
 import PostgresLogo from './PostgresLogo2.png'
+import PythonLogo from './PythonLogo.png'
+import FlaskLogo from './FlaskLogo.png'
 //styling
 import styled from 'styled-components'
 
@@ -42,7 +44,8 @@ export default class SkillsCont extends React.Component {
                 {/* <StyledLogoText>React</StyledLogoText> */}
                 <StyledLogo src={ReduxLogo} alt="Redux"/>
                 <StyledLogo src={PostgresLogo} alt="Postgres"/>
-
+                <StyledLogo src={PythonLogo} alt="Python"/>
+                <StyledLogo src={FlaskLogo} alt="Flask"/>
            </Element>
         </LogoDiv> )
     }
