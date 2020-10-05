@@ -79,6 +79,12 @@ export default class MainCont extends React.Component {
                 demoLink: "https://play-dobble.netlify.app/",
                 descr: "Online version of the popular card game Dobble",
                 background: 'https://i.imgur.com/V8DR7Ac.png'
+            }, {
+                id: 4,
+                name: "Standard Website of Spells",
+                demoLink: "https://www.youtube.com/watch?v=iAf6YddllC4&feature=youtu.be",
+                descr: "Dictionary Website for spells from the Harry Potter series",
+                background: 'https://imgur.com/a/q7ZMgfP'
             }
         ]
 
